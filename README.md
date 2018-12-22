@@ -1,6 +1,6 @@
 ### react移动端适配方案 
 
-> 本文项目基于create-react-app构建。更多移动端资料推荐
+> 本文项目基于create-react-app构建。更多移动端资料推荐
 
 - [w3cplus 再聊移动端页面的适配](https://www.w3cplus.com/mobile/vw-layout-in-vue.html)
 
@@ -8,7 +8,7 @@
 
 - [w3cplus 使用Flexible实现手淘H5页面的终端适配](https://www.w3cplus.com/mobile/lib-flexible-for-html5-layout.html)
 
-- 项目配置源码()
+- [本项目配置源码地址](https://github.com/shiliangL/react-vw-layout)
 > tips
 
 ```css
@@ -18,19 +18,19 @@ img {
 }
 ```
 
-### 1️⃣ 项目初始化、 暴露配置项
+### 1️⃣ 项目初始 + 暴露配置项
 
 - 1、create-react-app react-vw-layout 初始化项目
 - 2、npm run eject 暴露配置项
 
-### 2️⃣ postCss 插件安装配置
+### 2️⃣ postCss插件安装配置
 
 > package.json 中添加依赖,并安装
 
 ```js
 
 "postcss-aspect-ratio-mini": "0.0.2",
-//--坑点 已经更新 postcss-preset-env 所以请使用 "postcss-preset-env": "6.0.6"👇
+//--坑点 已经更新 postcss-preset-env 所以请使用 "postcss-preset-env": "6.0.6"👇
 "postcss-cssnext": "^3.1.0",
 "postcss-flexbugs-fixes": "3.2.0",
 "postcss-loader": "2.0.8",
@@ -126,7 +126,7 @@ const cssnano = require('cssnano');
 
 ```
 
-### 3、测试验证
+### 3️⃣测试验证
 
 > 修改 App.css 文件
 
@@ -141,15 +141,15 @@ const cssnano = require('cssnano');
 }
 ```
 
-> npm start 启动项目， 打开控制台  这个时候已经生效了
+> npm start 启动项目，打开控制台，这个时候已经生效了
 
 ![](https://user-gold-cdn.xitu.io/2018/12/22/167d3ba8d648eb46?w=3008&h=1656&f=png&s=307506)
 
-> 配置好生产  环境之后验证,npm run build,这个时候  生产打包已经  生效了。
+> 配置好生产环境之后验证,npm run build,这个时候，生产打包已经生效了。
 
 ![](https://user-gold-cdn.xitu.io/2018/12/22/167d3c1fc05d283d?w=2342&h=1074&f=png&s=373052)
 
-### 4、一些兼兼容性 hacks 处理
+### 4️⃣ 一些兼兼容性hacks处理
 
 > 修改 public/index.html, 引入阿里的 cdn
 
@@ -182,4 +182,4 @@ const cssnano = require('cssnano');
 
 ![](https://user-gold-cdn.xitu.io/2018/12/22/167d3e154ebd9eca?w=3236&h=1640&f=png&s=205474)
 
-> 至此配置算是完成了,更多其中插件的配置,还需要了解一下官方的配置使用,此外插件和可行性方案都会更新,这里只是作为自己学习实际的一个可行性方案实践的过程,如果有更多更新方案可以留言告知。谢阅~
+> 至此配置算是完成了,更多其中插件的配置,还需要了解一下官方的配置使用,此外插件和可行性方案都会更新,这里只是作为自己学习实际的一个可行性方案实践的过程,如果有更多更新方案可以留言告知。谢阅~
